@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property = "og-title" content="Portfolio de Ian Cler Renaud">
+    <meta property = "og-description" content="Portfolio de Ian Cler Renaud">
+    <meta property = "og-image" content="/images/yo.jpg">
+    <meta property = "og-image:alt" content="Una fotografia de Ian">
+
+    <title>Curso-HTML</title>
+    <style>
+        body{
+            background-color: rgba(4, 154, 254, 0.51);
+        }
+    </style>
+</head>
+<body>
+    <!--Esto es un titulo-->
+    <h1>PortFolio De Ian Cler Renaud</h1>
+    <p>Mi nombre es Ian, tengo 17 años y hoy decidi dar un salto al mundo de la programacion. </p>
+    <p>Empece la clase de HTML,<strong> Lunes 15/01/24</strong> y <strong> lo termine el 15/01/2024</strong> </p>
+    <p>Me llevo 4 horas intensas de practica, Proximamente ire mejorando el PortFolio</p>
+    <p>Al dia siguiente empezare con el curso de CSS, nos vemos mañana :)</p>
+
+    <!--Enlaces Internos y externos-->
+    <nav>
+        <a href="#primera-experiencia">Experiencia</a>
+        <a  href="https://www.instagram.com/iancler_10/" target="blank">Instagram</a>
+    </nav>
+    <!--Esto es un parrafo-->
+    <p>Estudiante de Desarrollo Web.
+        <!--Seria en negrita y seria lo correcto usar para marcar-->
+        <strong>Creando mi Primera Pagina</strong> 
+    </p>
+    <!--Imagen con 3 atributos importantes-->
+    <!--No usar loading lazy en imagenes que estan muy arriba-->
+    <img title="Imagen de Ian" src="/images/ian.jpg" alt="Esto Deberia de aparecer" width="300">
+    
+    <h2 id="primera-experiencia">Experiencia</h2>
+    <ul>
+
+        <li>Primera vez con HTML y un poco de CSS</li>
+    
+    </ul>
+    <section>
+        <h2>Preguntas Frecuentes</h2>
+        <details style="cursor:pointer";>
+            <summary>¿Donde estudias?</summary>
+            <p>Estoy estudiando en el Colegio Presbisteriano Cerritos. <strong>En Paraguay. En el Bachillerato Tecnico de Informatica</strong> </p>
+        </details>
+        <details style="cursor:pointer";>
+            <summary>¿Cuales son tus hobbies favoritos?</summary>
+            <p>Hacer deportes y estudiar, me encantan</p>
+        </details>
+    </section>
+    <aside>
+        <header>
+            <h3>Mis tecnologias favoritas</h3>
+        </header>
+        <ol type="1" >
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ol>
+    </aside>
+    <a href="tel:+595982932759">Llamame por telefono</a>
+    <a href="mailto:clerrenaud.ian@gmail.com">Enviame un Mail</a>
+
+    <section>
+        <header>
+            <h2>Formulario de contacto</h2>
+        </header>
+        <form action="/" method="POST"">
+        <fieldset>
+            <legend>Informacion Personal</legend>
+            <label>Nombre:
+                <input type="text" required>
+            </label>
+            <div> <label>Email:
+                <input type="email" required>
+            </label></div>
+           
+        </fieldset>
+        <fieldset>
+            <legend>Informacion Adicional</legend>
+            <label>Telefono: 
+                <input type="tel" required>
+            </label>
+        </fieldset>
+
+        <div>
+           <fieldset>
+            <legend>Otros
+                <label for="terms">Porque nos quieres contactar
+                    <select name="why" id="why">
+                        <option value="1">Trabajo</option>
+                        <option value="2">Duda</option>
+                        <option value="3">Mas Informacion</option>
+                    </select>
+                </label>
+                <div>
+                    <label for="terms">Aceptas los terminos?
+                        <input type="checkbox" id="terms" name="terms" required>
+                    </label>
+                </div>
+            </legend>
+            <div>
+                <datalist id="lenguajes">
+                    <option value="Java"></option>
+                    <option value="Python"></option>
+                    <option value="JavaScript"></option>
+                </datalist>
+                <label for="languajes">
+                ¿Con que idioma quieres que te ayudemos?
+                <input list="lenguajes">
+                </label>
+            </div>
+           </fieldset>
+        </div>
+       
+        <input type="submit" value="Enviar Contacto">
+        </form>
+    </section>
+    <!--Tener cuidado con lo que permitis en el iFrame-->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/hrxjBqZWsb0?si=tC1crKj11XNRqcVm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <video autoplay muted width="600" height="400" controls src="/images/video.mp4"></video>
+</body>
+</html>
